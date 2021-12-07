@@ -4,7 +4,7 @@ git branch: 'master', url: 'https://github.com/Siddharthsid12/MultiClientFront.g
 }
 
 
-stage('Install'){
+stage('Install node modules'){
 steps{
 bat 'npm install'
 }
