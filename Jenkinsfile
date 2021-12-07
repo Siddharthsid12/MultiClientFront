@@ -16,7 +16,3 @@ bat "npm run-script build"
 
 
 
-stage('Deploy'){
-bat "npm run ng serve"
-}
-}
