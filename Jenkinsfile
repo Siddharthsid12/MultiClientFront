@@ -19,5 +19,6 @@ steps{
 bat 'ng serve -o'
 }
 }
+}
 
 
