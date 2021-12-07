@@ -4,21 +4,20 @@ git branch: 'master', url: 'https://github.com/Siddharthsid12/MultiClientFront.g
 }
 
 
-
-stage('Install node modules'){
-bat "npm install -g @angular/cli"
+stage('Install'){
+steps{
+bat 'npm install'
 }
-
-
-
-
+}
 stage('Build'){
-bat "npm run build"
+steps{
+bat 'npm run-script build'
 }
-
-
-
-stage('Deploy'){
-bat "npm run ng serve"
+} stage('Deploy')
+{
+steps{
+bat 'ng serve -o'
+}
+}
 }
 }
